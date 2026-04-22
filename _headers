@@ -1,0 +1,22 @@
+/*
+  # 1. Keamanan & Anti-Intersepsi (HSTS & Upgrade)
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  Content-Security-Policy: upgrade-insecure-requests
+  
+  # 2. Kontrol Indexing & Robot
+  X-Robots-Tag: index, follow
+  
+  # 3. Aksesibilitas & Resource Sharing
+  Access-Control-Allow-Origin: *
+  
+  # 4. Keamanan Browser (Nosniff & Frame)
+  X-Frame-Options: SAMEORIGIN
+  X-Content-Type-Options: nosniff
+  Referrer-Policy: strict-origin-when-cross-origin
+  
+  # 5. Kecepatan & Cache
+  Cache-Control: public, max-age=3600
+
+/*.html
+  # Aturan khusus untuk semua file HTML
+  X-Robots-Tag: index, follow, max-snippet:-1, max-image-preview:large
